@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sciqus — Innovation At Core</title>
+  <link rel="icon" type="image/png" href="image.png">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style (3).css" />
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="script (2).js"></script>
+</head>
+<body>
+
+
+<div class="overlay" id="overlay"></div>
+
+
+<header>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="logo">SCI<span>QUS</span></div>
+  <nav class="header-nav">
+    <a href="#home"      class="nav-link active">Home</a>
+    <a href="#dashboard" class="nav-link">Dashboard</a>
+    <a href="#projects"  class="nav-link">Projects</a>
+    <a href="#settings"  class="nav-link">Settings</a>
+  </nav>
+</header>
+
+
+<div class="shell">
+
+ 
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-label">Main</div>
+      <a href="#home"      class="sidebar-link active"><span class="icon">🏠</span> Home</a>
+      <a href="#dashboard" class="sidebar-link"><span class="icon">📊</span> Dashboard</a>
+      <a href="#projects"  class="sidebar-link"><span class="icon">📁</span> Projects</a>
+    </div>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-section">
+      <div class="sidebar-label">Content</div>
+      <a href="#media"    class="sidebar-link"><span class="icon">🖼️</span> Media</a>
+      <a href="#editor"   class="sidebar-link"><span class="icon">✏️</span> Editor</a>
+      <a href="#articles" class="sidebar-link"><span class="icon">📝</span> Articles</a>
+    </div>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-section">
+      <div class="sidebar-label">System</div>
+      <a href="#settings"      class="sidebar-link"><span class="icon">⚙️</span> Settings</a>
+      <a href="#profile"       class="sidebar-link"><span class="icon">👤</span> Profile</a>
+      <a href="#notifications" class="sidebar-link"><span class="icon">🔔</span> Notifications</a>
+      <a href="#logout"        class="sidebar-link"><span class="icon">🚪</span> Logout</a>
+    </div>
+  </aside>
+
+  
+  <main id="main-content">
+    <div class="page-title" id="home">Overview</div>
+    <div class="grid">
+
+      
+      <div class="container c1">
+        <div class="carousel-wrap" id="carousel" data-total="3">
+          <div class="carousel-track" id="carouselTrack">
+
+            <div class="carousel-slide">
+              <img src="download (2).jpg" alt="Innovation" class="slide-img" loading="lazy" />
+              <div class="slide-overlay">
+                <div class="slide-content">
+                  <h2>Innovation At Core</h2>
+                  <p>Building the future, one pixel at a time.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="download (3).jpg" alt="Design" class="slide-img" loading="lazy" />
+              <div class="slide-overlay">
+                <div class="slide-content">
+                  <h2>Design With Purpose</h2>
+                  <p>Responsive, accessible, and beautiful by default.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="download (4).jpg" alt="Scale" class="slide-img" loading="lazy" />
+              <div class="slide-overlay">
+                <div class="slide-content">
+                  <h2>Code That Scales</h2>
+                  <p>From mobile to desktop — seamless everywhere.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous slide">&#8592;</button>
+          <button class="carousel-btn next" id="carouselNext" aria-label="Next slide">&#8594;</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+      </div>
+
+      
+      <div class="container c2">
+        <div class="text-block">
+          <span class="tag">About</span>
+          <h3>What We Do</h3>
+          <p>We craft digital experiences that bridge the gap between complex technology and everyday users. Our team works in sync to deliver products that are fast, accessible, and delightful.</p>
+          <div class="stats-row">
+            <div class="stat">
+              <div class="stat-num" data-target="120">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="48">0</div>
+              <div class="stat-label">Clients</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="5">0</div>
+              <div class="stat-label">Stars ★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="container c3">
+        <div class="img-slider" id="imgSlider" data-total="3">
+          <div class="img-slider-track" id="imgTrack">
+
+            <div class="img-slide">
+              <img src="search engine marketing (sem).jpg" alt="UI Design" class="slide-thumb" loading="lazy" />
+              <div class="img-slide-caption">
+                <h4>UI Design</h4>
+                <p>Crafting interfaces users love.</p>
+              </div>
+            </div>
+
+            <div class="img-slide">
+              <img src="download (5).jpg" alt="Performance" class="slide-thumb" loading="lazy" />
+              <div class="img-slide-caption">
+                <h4>Performance</h4>
+                <p>Blazing fast, every time.</p>
+              </div>
+            </div>
+
+            <div class="img-slide">
+              <img src="download.jpg" alt="Mobile First" class="slide-thumb" loading="lazy" />
+              <div class="img-slide-caption">
+                <h4>Mobile First</h4>
+                <p>Built for every screen size.</p>
+              </div>
+            </div>
+
+          </div>
+          <button class="slider-btn sp" id="imgPrev" aria-label="Previous">&#8592;</button>
+          <button class="slider-btn sn" id="imgNext" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+
+      
+      <div class="container c4">
+        <div class="static-card">
+          <div class="static-top">
+            <img src="Frank Depositvale Scam Or Legit.jpg" alt="Our team" class="static-img" loading="lazy" />
+            <div>
+              <h3>Our Strengths</h3>
+              <ul class="feature-list">
+                <li>Responsive Web Development</li>
+                <li>Cross-Platform Mobile Apps</li>
+                <li>Modern Design Systems</li>
+                <li>Agile Delivery Process</li>
+              </ul>
+            </div>
+          </div>
+          <div class="progress-bars">
+            <div>
+              <div class="pb-label"><span>Design</span><span>90%</span></div>
+              <div class="pb-track"><div class="pb-fill" data-width="90"></div></div>
+            </div>
+            <div>
+              <div class="pb-label"><span>Development</span><span>85%</span></div>
+              <div class="pb-track"><div class="pb-fill" data-width="85"></div></div>
+            </div>
+            <div>
+              <div class="pb-label"><span>Research</span><span>75%</span></div>
+              <div class="pb-track"><div class="pb-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="container c5">
+        <div id="react-btn-panel"></div>
+      </div>
+
+      
+      <div class="container c6">
+        <div class="anim-container">
+          <h3>Explore &amp; Interact</h3>
+          <div class="tab-row">
+            <button class="tab-btn active" data-tab="t1">Overview</button>
+            <button class="tab-btn"        data-tab="t2">Analytics</button>
+            <button class="tab-btn"        data-tab="t3">Insights</button>
+          </div>
+          <div class="tab-panel active" id="t1">
+            <p>Welcome to the interactive section. Switch tabs to explore different content areas dynamically without a page reload.</p>
+            <div class="anim-bar-wrap">
+              <div class="anim-bar" style="height:70%;background:var(--c3);animation-delay:.1s"></div>
+              <div class="anim-bar" style="height:90%;background:var(--c4);animation-delay:.2s"></div>
+              <div class="anim-bar" style="height:55%;background:var(--c1);animation-delay:.3s"></div>
+              <div class="anim-bar" style="height:80%;background:var(--c3);animation-delay:.4s"></div>
+              <div class="anim-bar" style="height:65%;background:var(--c4);animation-delay:.5s"></div>
+              <div class="anim-bar" style="height:95%;background:var(--c1);animation-delay:.6s"></div>
+            </div>
+          </div>
+          <div class="tab-panel" id="t2">
+            <p>Analytics data shows a 42% improvement in engagement this quarter, with mobile sessions growing by 28% across all platforms.</p>
+            <div class="anim-bar-wrap">
+              <div class="anim-bar" style="height:40%;background:var(--c4);animation-delay:.1s"></div>
+              <div class="anim-bar" style="height:60%;background:var(--c3);animation-delay:.2s"></div>
+              <div class="anim-bar" style="height:85%;background:var(--c2);animation-delay:.3s"></div>
+              <div class="anim-bar" style="height:70%;background:var(--c4);animation-delay:.4s"></div>
+              <div class="anim-bar" style="height:50%;background:var(--c3);animation-delay:.5s"></div>
+            </div>
+          </div>
+          <div class="tab-panel" id="t3">
+            <p>Key insight: Users spend 3× longer on pages with interactive elements. Prioritise engagement over information density.</p>
+            <div class="anim-bar-wrap">
+              <div class="anim-bar" style="height:100%;background:var(--c1);animation-delay:.1s"></div>
+              <div class="anim-bar" style="height:75%;background:var(--c2);animation-delay:.2s"></div>
+              <div class="anim-bar" style="height:50%;background:var(--c3);animation-delay:.3s"></div>
+              <div class="anim-bar" style="height:88%;background:var(--c4);animation-delay:.4s"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<!-- ══ BOTTOM NAV (mobile only) ══ -->
+<nav class="bottom-nav" id="bottomNav">
+  <a href="#home"      class="bnav-item active" data-label="Home">
+    <span class="bnav-icon">🏠</span><span class="bnav-label">Home</span>
+  </a>
+  <a href="#dashboard" class="bnav-item" data-label="Dash">
+    <span class="bnav-icon">📊</span><span class="bnav-label">Dashboard</span>
+  </a>
+  <a href="#projects"  class="bnav-item" data-label="Projects">
+    <span class="bnav-icon">📁</span><span class="bnav-label">Projects</span>
+  </a>
+  <a href="#profile"   class="bnav-item" data-label="Profile">
+    <span class="bnav-icon">👤</span><span class="bnav-label">Profile</span>
+  </a>
+  <a href="#settings"  class="bnav-item" data-label="Settings">
+    <span class="bnav-icon">⚙️</span><span class="bnav-label">Settings</span>
+  </a>
+</nav>
+
+<script src="script (2).js"></script>
+
+<!-- ══ REACT · Container 5 ══ -->
+<script type="text/babel">
+  const { useState } = React;
+
+  function ButtonPanel() {
+    const [log, setLog]   = useState([]);
+    const [mode, setMode] = useState('idle');
+
+    function handleBtn(lbl) {
+      const map = {
+        A: { text: 'Button A activated — action triggered!', mode: 'a' },
+        B: { text: 'Button B selected — mode switched.',    mode: 'b' },
+      };
+      setMode(map[lbl].mode);
+      setLog(prev => [map[lbl].text, ...prev].slice(0, 3));
+    }
+
+    return (
+      <div className="btn-container">
+        <h3>Take Action <span className="react-badge">⚛ React</span></h3>
+        <div className={`mode-indicator mode-${mode}`}>
+          {mode === 'idle' && <span>Choose an action below</span>}
+          {mode === 'a'    && <span>⚡ Action mode active</span>}
+          {mode === 'b'    && <span>🔄 Switch mode active</span>}
+        </div>
+        <div className="btn-row">
+          <button
+            className={`btn btn-a${mode === 'a' ? ' btn-lit' : ''}`}
+            onClick={() => handleBtn('A')}>
+            Button A
+          </button>
+          <button
+            className={`btn btn-b${mode === 'b' ? ' btn-lit' : ''}`}
+            onClick={() => handleBtn('B')}>
+            Button B
+          </button>
+        </div>
+        <ul className="react-log">
+          {log.map((msg, i) => (
+            <li key={i} style={{ opacity: 1 - i * 0.3 }}>› {msg}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('react-btn-panel')).render(<ButtonPanel />);
+</script>
+
+</body>
+</html>
